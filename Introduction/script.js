@@ -58,24 +58,24 @@ let firstName = "Ramya";
 let lastName = "Murali";
 let city = "Chennai";
 
-// console.log(firstName + " " + lastName + " lives in " + city);
+console.log(firstName + " " + lastName + " lives in " + city);
 
 //string interpolation
-// console.log(`${firstName} ${lastName} lives in ${city}`);
+console.log(`${firstName} ${lastName} lives in ${city}`);
 
 //multiline string
 
 let msg = `happy
 birthday`;
 
-// console.log(msg)
+console.log(msg)
 
 //single and double quotes in string
 msg = "cat's name is toto";
 
 msg = `cat's name is "toto"`;
 
-// console.log(msg)
+console.log(msg)
 
 //arrays
 let num = 10;
