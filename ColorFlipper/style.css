@@ -1,0 +1,40 @@
+html,
+body{
+   margin: 0;
+   font-family: 'Apple Chancery', cursive;
+}
+#heading{
+    text-align: left;
+    margin-bottom: 0px;
+    font-size: 2em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    color:crimson
+}
+#color{
+    float: right;
+    margin-right: 15px;
+}
+
+#wrap{
+    height:90vh;
+    width:100vw;
+    border-top:3px solid #323232;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button{
+    border: 1px solid black;
+    background-color: rgb(219, 54, 54);
+    color:white;
+    border-radius: 15px;
+    padding: 20px 80px;
+    font-size: 28px;
+    letter-spacing: 5px;
+    cursor:pointer;
+}
+
