@@ -5,7 +5,7 @@ body{
    background-color:#f5e8ba;
 }
 
-#wrapper div,#wrapper h2{
+#wrapper h2{
     display:flex;
     justify-content: center;
     
@@ -19,7 +19,7 @@ input{
     border-radius: 5px;
     border: 2px solid black ;
     margin-top:30px;
-    height:2em;
+    height:2.5em;
     width:250px;
     padding-left:10px;
 }
@@ -51,9 +51,17 @@ button{
 button:hover{
     cursor:pointer;
 }
-#result{
+#todoList{
     color:white;
-    margin-top:20px;
-    font-size:32px;
+    font-size:28px;  
+    margin-top:10px; 
+}
+
+#todoList p{
+  margin:10px 0px;
+}
+
+#todoList p:hover{
+  cursor: pointer;
 }
 

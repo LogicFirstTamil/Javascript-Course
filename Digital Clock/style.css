@@ -1,0 +1,31 @@
+body{
+    margin:0;
+    padding:0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,98,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.container{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    display:flex;
+    width:100vw;
+    height:100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+}
+
+#wrapper{
+    border: 3px solid white;
+    padding:1rem;
+}
+
+.container span{
+    margin-left:10px;
+}
+
+#ampm{
+    font-size:3rem;
+    align-items: end;
+}

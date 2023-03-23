@@ -238,7 +238,7 @@ arr2d = [
 //result = {a:1,b:1,c:2,d:2...}
 let result = {'a':1,'b':2}
 result['c'] = 1
-console.log(result['d'])
+console.log(result['d']) 
 
 console.log(arr2d.flat())
 let count = arr2d.flat().reduce(
@@ -252,3 +252,86 @@ let count = arr2d.flat().reduce(
     ,{});
 
 console.log(count)
+console.clear()
+
+let a = 100
+
+function func1(){
+    let b,c
+    console.log('a is',a)
+}
+
+func1()
+a = 200
+func1()
+
+//returning functions - higher order function
+//lexical scoping - inner scope can access parent scope variables
+
+//A closure is the combination of a 
+//function bundled together (enclosed) 
+//with references to its surrounding state 
+//(the lexical environment). 
+//In other words, a closure gives you 
+//access to an outer function's scope from
+//an inner function.
+function outer(name){
+    let outerVariable = 'Bread'
+    function inner(){
+        let innerVariable = 'Butter'
+        console.log('inner variable',innerVariable)
+        console.log('outer variable',outerVariable)
+        console.log('a is',a)
+        console.log('hello',name)
+    }
+    return inner
+}   
+
+let call1 = outer('Vidya')
+call1()
+
+let call2 = outer('John')
+call2()
+call1()
+
+function makeAdder(x){
+    return function(y){
+        return x+y
+    }
+}
+
+let add5 = makeAdder(5)
+console.log(add5(10))
+
+let add100 = makeAdder(100)
+console.log(add100(20))
+console.log(add100(45))
+console.log(add5(22))
+
+//Memory Management
+
+let bigNum = 9007199254740991n
+
+const bigNum2 = BigInt(9007199254740991)
+
+let a = 100
+a = 200
+let b = a
+b=300
+
+console.log('a is ',a)
+console.log('b is ',b)
+
+let obj1 = {name:'Danya',age:24}
+let obj2 = obj1
+
+obj1.age = 25
+obj2.name = 'ramya'
+
+console.log('obj1',obj1)
+console.log('obj2',obj2)
+
+let arr1 = [2,3,4]
+let arr2 = arr1
+arr2[0] = 10
+console.log(arr1,arr2)
